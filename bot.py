@@ -8,7 +8,8 @@ command_list = ['start']
 
 @bot.message_handler(commands=command_list)
 def command_issue(message):
-    id.append(message.chat.id)
+    with open('id.txt', 'a+') as f:
+        f.write(str(id) + ' ')
 
 print(id)
 bot.infinity_polling(timeout=10)

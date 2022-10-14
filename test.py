@@ -10,15 +10,6 @@ from datetime import *
 class TestMain(unittest.TestCase):
     last = 0
 
-    def setUp(self) -> None:
-        self.begin = datetime.now()
-        self.Main = Main()
-
-    def tearDown(self) -> None:
-        self.end = datetime.now()
-        diff = self.end - self.begin
-        last = diff.microseconds / 1000
-
     def test_min(self, n=1000000):
         file_set_Up(n)
         self.Main = Main()
@@ -43,7 +34,7 @@ class TestMain(unittest.TestCase):
         f.close()
         self.assertEqual(summa, self.Main._sum())
 
-    def test_mult(self, n=1000000):
+    def test_mult(self, n=10000):
         file_set_Up(n)
         self.Main = Main()
         f = open('input.txt')
@@ -57,7 +48,7 @@ class TestMain(unittest.TestCase):
     def test_min_graph(self):
         array = []
         lst = []
-        for i in range(1, 1000000, 100000):
+        for i in range(1, 1000000, 10000):
             length = i
             f = open('input.txt')
             file_set_Up(i)
@@ -77,7 +68,7 @@ class TestMain(unittest.TestCase):
     def test_max_graph(self):
         array = []
         lst = []
-        for i in range(1, 1000000, 100000):
+        for i in range(1, 1000000, 10000):
             length = i
             f = open('input.txt')
             file_set_Up(i)
@@ -97,7 +88,7 @@ class TestMain(unittest.TestCase):
     def test_sum_graph(self):
         array = []
         lst = []
-        for i in range(1, 1000000, 100000):
+        for i in range(1, 1000000, 10000):
             length = i
             f = open('input.txt')
             file_set_Up(i)
@@ -117,7 +108,7 @@ class TestMain(unittest.TestCase):
     def test_mult_graph(self):
         array = []
         lst = []
-        for i in range(1, 1000000, 100000):
+        for i in range(1, 1000000, 10000):
             length = i
             f = open('input.txt')
             file_set_Up(i)
