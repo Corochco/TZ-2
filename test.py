@@ -48,7 +48,7 @@ class TestMain(unittest.TestCase):
     def test_min_graph(self):
         array = []
         lst = []
-        for i in range(1, 1000000, 10000):
+        for i in range(1, 1000000, 100000):
             length = i
             f = open('input.txt')
             file_set_Up(i)
@@ -68,7 +68,7 @@ class TestMain(unittest.TestCase):
     def test_max_graph(self):
         array = []
         lst = []
-        for i in range(1, 1000000, 10000):
+        for i in range(1, 1000000, 100000):
             length = i
             f = open('input.txt')
             file_set_Up(i)
@@ -88,7 +88,7 @@ class TestMain(unittest.TestCase):
     def test_sum_graph(self):
         array = []
         lst = []
-        for i in range(1, 1000000, 10000):
+        for i in range(1, 1000000, 100000):
             length = i
             f = open('input.txt')
             file_set_Up(i)
@@ -108,7 +108,7 @@ class TestMain(unittest.TestCase):
     def test_mult_graph(self):
         array = []
         lst = []
-        for i in range(1, 1000000, 10000):
+        for i in range(1, 1000000, 100000):
             length = i
             f = open('input.txt')
             file_set_Up(i)
