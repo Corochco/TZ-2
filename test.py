@@ -14,7 +14,7 @@ class TestMain(unittest.TestCase):
         file_set_Up(n)
         self.Main = Main()
         f = open('input.txt')
-        minimal = min(list(map(int, f.readline().split()))) + 100500
+        minimal = min(list(map(int, f.readline().split())))
         f.close()
         self.assertEqual(minimal, self.Main._min())
 
